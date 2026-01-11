@@ -1,4 +1,4 @@
-# Encrypted Traffic Classification – Model Comparison
+# Encrypted Traffic Classification  Model Comparison
 
 This Kaggle notebook presents a **comparative performance analysis** of four deep learning models for **Encrypted Traffic Analysis (ETA)**:
 
@@ -93,5 +93,6 @@ Scikit-learn
 PyTorch / TensorFlow
 Matplotlib
 Seaborn
+
 
 
