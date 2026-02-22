@@ -1,0 +1,42 @@
+# === Path options ===
+vocab_path: "./data/github_repo/EtBert/models/encryptd_vocab.txt"  # must exist
+spm_model_path: null  # must exist (SentencePiece model)
+test_path: null  # required test dataset
+# prediction_path: "/path/to/predictions.txt"  # output file for predictions
+config_path: "./data/github_repo/EtBert/models/bert/base_config.json"  # default config
+
+# === Model architecture (your added params) ===
+emb_size: 768
+feedforward_size: 3072
+hidden_size: 768
+hidden_act: "gelu"
+heads_num: 12
+layers_num: 12
+dropout: 0.1
+
+# === Inference options ===
+batch_size: 64
+seq_length: 64
+
+# === Classification options ===
+pooling: "first"
+tokenizer: "bert"
+output_logits: false
+output_prob: false
+
+# === Model options (from model_opts) ===
+embedding: "word_pos_seg"
+max_seq_length: 512
+relative_position_embedding: false
+relative_attention_buckets_num: 32
+remove_embedding_layernorm: false
+remove_attention_scale: false
+encoder: "transformer"
+mask: "fully_visible"
+layernorm_positioning: "post"
+feed_forward: "dense"
+remove_transformer_bias: false
+layernorm: "normal"
+bidirectional: false
+factorized_embedding_parameterization: false
+parameter_sharing: false

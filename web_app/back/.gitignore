@@ -1,0 +1,5 @@
+env
+data/*
+!data/github_repo/** 
+!data/etbert_config.yml
+testfolder
